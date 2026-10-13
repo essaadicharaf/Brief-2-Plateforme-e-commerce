@@ -1,42 +1,42 @@
-
-:root{
-  --couleur-fond:#FAF7F0;
-  --fond-secondaire:#2E7D32;
-  --couleur-texte:#252A25;
-  --couleur-principal:#355C4A;
-  --couleur-secondaire:#C77B4A;
+:root {
+  --couleur-fond: #faf7f0;
+  --fond-secondaire: #2e7d32;
+  --couleur-texte: #252a25;
+  --couleur-principal: #355c4a;
+  --couleur-secondaire: #c77b4a;
 }
-body{
-  background-color:var(--couleur-fond);
-  color:var(--couleur-texte);
+body {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
 }
-header{
+header {
   background-color: var(--couleur-principal);
   height: 40px;
 }
-.bas{
-  color:Sienna;
+.bas {
+  color: Sienna;
 }
-.tag{
-  background-color:aqua;
+.tag {
+  background-color: aqua;
   border-radius: 30% 30%;
   padding: 4px;
 }
-.info{
+.info {
   background-color: white;
   border-radius: 20px;
 }
-.rem{
+.rem {
   display: flex;
   justify-content: end;
-  align-items:flex-end;
+  align-items: flex-end;
 }
-.plus-b{
+.plus-b {
   background-color: antiquewhite;
   border-radius: 15px;
 }
 
-
-
-
-
+/* mt-3 inline-flex gap-4 rounded-full border bg-stone-100 px-3 py-1 */
+.quantity {
+  display: flex;
+}
+* { box-sizing: border-box; }  
