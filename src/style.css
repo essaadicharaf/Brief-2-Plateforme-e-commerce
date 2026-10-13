@@ -1,0 +1,37 @@
+
+:root{
+  --couleur-fond:#FAF7F0;
+  --fond-secondaire:#2E7D32;
+  --couleur-texte:#252A25;
+  --couleur-principal:#355C4A;
+  --couleur-secondaire:#C77B4A;
+}
+body{
+  background-color:var(--couleur-fond);
+  color:var(--couleur-texte);
+}
+header{
+  background-color: var(--couleur-principal);
+  height: 40px;
+}
+.bas{
+  color:Sienna;
+}
+.tag{
+  background-color:aqua;
+  border-radius: 30% 30%;
+  padding: 4px;
+}
+.info{
+  background-color: white;
+  border-radius: 20px;
+}
+.rem{
+  display: flex;
+  justify-content: end;
+  align-items:flex-end;
+}
+.plus-b{
+  background-color: antiquewhite;
+  border-radius: 15px;
+}
