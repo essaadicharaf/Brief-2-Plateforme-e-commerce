@@ -1,49 +1,44 @@
 :root {
-  --couleur-fond: #faf7f0;
-  --fond-secondaire: #2e7d32;
-  --couleur-texte: #252a25;
-  --couleur-principal: #355c4a;
-  --couleur-secondaire: #c77b4a;
+    --couleur-fond: #faf7f0;
+    --fond-secondaire: #2e7d32;
+    --couleur-texte: #252a25;
+    --couleur-principal: #355c4a;
+    --couleur-secondaire: #c77b4a;
 }
-<<<<<<< HEAD
 body {
-  background-color: var(--couleur-fond);
-  color: var(--couleur-texte);
-=======
-body{
-  background-color:var(--couleur-fond);
-  color:var(--couleur-texte);
-  font-family:;
->>>>>>> a329f97 ( update header)
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
 }
 header {
-  background-color: var(--couleur-principal);
-  height: 40px;
+    background-color: var(--couleur-principal);
+    height: 40px;
 }
 .bas {
-  color: Sienna;
+    color: Sienna;
 }
 .tag {
-  background-color: aqua;
-  border-radius: 30% 30%;
-  padding: 4px;
+    background-color: aqua;
+    border-radius: 30% 30%;
+    padding: 4px;
 }
 .info {
-  background-color: white;
-  border-radius: 20px;
+    background-color: white;
+    border-radius: 20px;
 }
 .rem {
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 .plus-b {
-  background-color: antiquewhite;
-  border-radius: 15px;
+    background-color: antiquewhite;
+    border-radius: 15px;
 }
 
 /* mt-3 inline-flex gap-4 rounded-full border bg-stone-100 px-3 py-1 */
 .quantity {
-  display: flex;
+    display: flex;
 }
-* { box-sizing: border-box; }  
+* {
+    box-sizing: border-box;
+}
