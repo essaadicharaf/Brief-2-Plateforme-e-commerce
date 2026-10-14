@@ -5,9 +5,16 @@
   --couleur-principal: #355c4a;
   --couleur-secondaire: #c77b4a;
 }
+<<<<<<< HEAD
 body {
   background-color: var(--couleur-fond);
   color: var(--couleur-texte);
+=======
+body{
+  background-color:var(--couleur-fond);
+  color:var(--couleur-texte);
+  font-family:;
+>>>>>>> a329f97 ( update header)
 }
 header {
   background-color: var(--couleur-principal);
