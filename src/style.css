@@ -1,15 +1,8 @@
-:root {
-  --couleur-fond: #faf7f0;
-  --fond-secondaire: #2e7d32;
-  --couleur-texte: #252a25;
-  --couleur-principal: #355c4a;
-  --couleur-secondaire: #c77b4a;
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
 }
 
-body {
-  background-color: var(--couleur-fond);
-  color: var(--couleur-texte);
-}
 .bas {
   color: Sienna;
 }
@@ -36,16 +29,19 @@ body {
 .quantity {
   display: flex;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* footer  */
 .footer {
-  border-top: var(--couleur-principal) 3px solid;
-  background-color: var(--couleur-fond);
+  border-top: var(--color-primary) 3px solid;
+  background-color: var(--color-background);
   padding-top: 32px;
   padding-bottom: 24px;
   font-size: 12px;
   line-height: 16px;
-  color: var(--fond-secondaire);
+  color: var(--color-secondary);
   margin: 0 20px;
 }
 .footer-container {
@@ -71,7 +67,7 @@ body {
   margin-top: 65px;
 }
 .footer-text {
-  color: var(--couleur-texte);
+  color: var(--color-text);
 }
 .social-label {
   color: #252a2579;
@@ -80,12 +76,12 @@ body {
   font-size: small;
 }
 .icon {
-  color: var(--couleur-principal);
+  color: var(--color-primary);
   margin: 3px 0;
 }
 .footer-copyright {
   text-align: center;
-  color: var(--couleur-principal);
+  color: var(--color-primary);
   margin-top: 15px;
 }
 
@@ -107,7 +103,63 @@ body {
   }
   .footer-copyright {
     text-align: center;
-    color: var(--couleur-principal);
+    color: var(--color-primary);
     margin-top: 30px;
   }
 }
+
+/* card of panier */
+.cart-item {
+  display: flex;
+  /* gap: 16px; */
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+}
+.item-img {
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #dda94f, #c8793c 60%, #ebcb93);
+}
+.item-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.item-info {
+  margin-left: -150px;
+}
+.item-title {
+  margin-top: 10px;
+}
+.item-badge {
+  background-color: #f1f5f9;
+  padding: 5px;
+  border-radius: 25px;
+  border: 2px solid #252a25;
+}
+.item-remove {
+  color: #c77b4a;
+}
+.quantity {
+  background-color: #ebcb93;
+  padding: 3px 10px;
+  max-width: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid #dda94f;
+}
+.item-info .item-details {
+  margin-bottom: 10px;
+}
+.item-price {
+  color: var(--color-primary);
+}
+
+/* end */
