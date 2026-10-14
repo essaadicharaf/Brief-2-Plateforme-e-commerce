@@ -1,289 +1,86 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliothèque de Composants — L'Atelier Naturel</title>
+<!-- footer start -->
+     <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-main">
 
-    <!-- Fonts: Poppins & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="dist/output.css" />
-  </head>
-  <body class="bg-ivoire text-charbon font-body min-h-screen py-10 px-4 sm:px-8 space-y-16">
-    <div class="max-w-7xl mx-auto border-b border-beige pb-6">
-      <h1 class="font-heading text-3xl sm:text-4xl font-bold text-charbon">Bibliothèque de Composants</h1>
-      <p class="text-charbon/70 mt-2 text-sm sm:text-base">Design System & Composants réutilisables — L'Atelier Naturel</p>
-    </div>
-
-    <!-- ================================================================= -->
-    <!-- ZONE 1 : DEV 5 (AYOUB) — BOUTONS & BADGES                         -->
-    <!-- ================================================================= -->
-    <section class="max-w-7xl mx-auto space-y-8 bg-white p-6 sm:p-8 rounded-md border border-beige shadow-sm">
-      <div class="border-b border-beige pb-3">
-        <h2 class="font-heading text-xl font-bold text-primary">1. Boutons & Badges (Dev 5 — Ayoub)</h2>
-      </div>
-
-      <!-- A. Boutons -->
-      <div class="space-y-4">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-charbon/60">États des Boutons</h3>
-        <div class="flex flex-wrap items-center gap-4">
-          <!-- Primaire Normal -->
-          <button type="button" class="bg-primary hover:opacity-90 text-white font-medium px-md py-sm rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Bouton Primaire</button>
-
-          <!-- Secondaire / Terracotta -->
-          <button type="button" class="bg-secondary hover:opacity-90 text-white font-medium px-md py-sm rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2">Bouton Secondaire</button>
-
-          <!-- Outline -->
-          <button type="button" class="border border-primary text-primary hover:bg-primary hover:text-white font-medium px-md py-sm rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
-            Bouton Contour
-          </button>
-
-          <!-- Disabled -->
-          <button type="button" disabled class="bg-beige text-charbon/40 font-medium px-md py-sm rounded-md cursor-not-allowed">Désactivé</button>
-        </div>
-      </div>
-
-      <!-- B. Badges -->
-      <div class="space-y-4">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-charbon/60">Badges Promotionnels & Statuts</h3>
-        <div class="flex flex-wrap items-center gap-3">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary text-white"> Nouveau </span>
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-secondary text-white"> -20% Promo </span>
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beige text-charbon"> Stock limité </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================================= -->
-    <!-- ZONE 2 : DEV 1 (MAJD) — CARTE PRODUIT                             -->
-    <!-- ================================================================= -->
-    <section class="max-w-7xl mx-auto space-y-8 bg-white p-6 sm:p-8 rounded-md border border-beige shadow-sm">
-      <div class="border-b border-beige pb-3">
-        <h2 class="font-heading text-xl font-bold text-primary">2. Carte Produit (Dev 1 — Majd)</h2>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm sm:max-w-none">
-        <!-- Carte Produit (Avec Promo) -->
-        <article class="group bg-ivoire border border-beige rounded-md overflow-hidden hover:shadow-md transition-shadow flex flex-col">
-          <div class="relative bg-beige aspect-square overflow-hidden">
-            <img src="images/bougie.jpg" alt="Bougie fleur de coton artisanale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2 left-2 bg-secondary text-white text-xs font-semibold px-2.5 py-1 rounded-full"> -20% Promo </span>
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="ABC Company logo" width="200"
+              height="200">
           </div>
 
-          <div class="p-md flex flex-col flex-1 justify-between gap-4">
-            <div class="space-y-1">
-              <span class="text-xs uppercase tracking-wider text-charbon/60 font-medium">Bougies</span>
-              <h3 class="font-heading text-base font-semibold text-charbon group-hover:text-primary transition-colors">Bougie fleur de coton</h3>
-              <div class="flex items-baseline gap-2 pt-1">
-                <span class="font-bold text-charbon text-lg">120 MAD</span>
-                <span class="text-xs text-charbon/50 line-through">150 MAD</span>
-              </div>
+          <!-- Contact -->
+          <div class="footer-contact">
+
+            <!-- Address -->
+            <div class="contact-item">
+              <svg class="icon" width="23" height="23" fill="currentColor"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+              <span class="footer-text">ABC Company, 123 East, 17th Street, St. louis 10001</span>
             </div>
 
-            <button
-              type="button"
-              aria-label="Ajouter au panier"
-              class="w-full bg-primary hover:opacity-90 text-white font-medium py-sm px-md rounded-md flex items-center justify-center gap-2 transition-all focus:outline-none focus:ring-2 focus:ring-primary"
-            >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            <!-- Email -->
+            <div class="contact-item">
+              <svg class="icon" width="23" height="23" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <span>Ajouter au panier</span>
-            </button>
+              <a class="footer-text" href="mailto:absdem@gmail.com">absdem@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <svg class="icon" width="23" height="23" fill="currentColor"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+              <a class="footer-text" href="tel:1234567890">(123) 456-7890</a>
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
 
-    <!-- ================================================================= -->
-    <!-- ZONE 3 : DEV 2 (CHARAF) — NAVIGATION & BREADCRUMB                -->
-    <!-- ================================================================= -->
-    <section class="max-w-7xl mx-auto space-y-8 bg-white p-6 sm:p-8 rounded-md border border-beige shadow-sm">
-      <div class="border-b border-beige pb-3">
-        <h2 class="font-heading text-xl font-bold text-primary">3. Navigation & Fil d'Ariane (Dev 2 — Charaf)</h2>
-      </div>
+          <!-- Social media -->
+          <div class="footer-social">
+            <span class="social-label">Social Media</span>
 
-      <!-- En-tête Responsive -->
-      <div class="space-y-3">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-charbon/60">En-tête Mobile & Desktop</h3>
-        <header class="bg-ivoire border border-beige rounded-md px-4 sm:px-6">
-          <div class="flex items-center justify-between h-16">
-            <!-- Burger Mobile -->
-            <button type="button" aria-label="Ouvrir le menu de navigation" class="lg:hidden p-2 text-charbon hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-sm">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <!-- X -->
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg class="icon" width="23" height="23" fill="currentColor"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
               </svg>
-            </button>
-
-            <!-- Logo -->
-            <a href="index.html" class="font-heading text-lg sm:text-xl font-bold text-charbon flex items-center gap-2">
-              <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66l.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.75C5 7.9 3 11 3 14c0 3 2 5 5 5c3.27 0 6.18-3.1 9-11z" />
-              </svg>
-              <span>L'Atelier <span class="text-primary">Naturel</span></span>
             </a>
 
-            <!-- Liens Desktop -->
-            <nav aria-label="Navigation principale" class="hidden lg:flex items-center gap-8">
-              <a href="index.html" class="text-sm font-medium text-charbon hover:text-primary transition-colors">Accueil</a>
-              <a href="catalogue.html" class="text-sm font-semibold text-primary border-b-2 border-primary pb-0.5">Boutique</a>
-              <a href="contact.html" class="text-sm font-medium text-charbon hover:text-primary transition-colors">Contact</a>
-            </nav>
-
-            <!-- Panier d'achat -->
-            <a href="panier.html" aria-label="Panier contenant 2 articles" class="relative p-2 text-charbon hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-sm">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            <!-- Ln -->
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg class="icon" width="23" height="23" fill="currentColor"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
               </svg>
-              <span class="absolute top-1 right-1 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-primary rounded-full"> 2 </span>
+            </a>
+
+            <!-- Insta -->
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg class="icon" width="23" height="23" fill="currentColor"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
             </a>
           </div>
-        </header>
-      </div>
-
-      <!-- Fil d'Ariane -->
-      <div class="space-y-3">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-charbon/60">Fil d'Ariane Accessible</h3>
-        <nav aria-label="Fil d'Ariane" class="py-2">
-          <ol class="flex items-center gap-2 text-xs sm:text-sm text-charbon/70">
-            <li><a href="index.html" class="hover:text-primary hover:underline">Accueil</a></li>
-            <li aria-hidden="true" class="text-charbon/40">/</li>
-            <li><a href="catalogue.html" class="hover:text-primary hover:underline">Boutique</a></li>
-            <li aria-hidden="true" class="text-charbon/40">/</li>
-            <li><span class="font-semibold text-charbon" aria-current="page">Bougies artisanales</span></li>
-          </ol>
-        </nav>
-      </div>
-    </section>
-
-    <!-- ================================================================= -->
-    <!-- ZONE 4 : DEV 3 (RIME) — FORMULAIRE & INPUTS                      -->
-    <!-- ================================================================= -->
-    <section class="max-w-7xl mx-auto space-y-8 bg-white p-6 sm:p-8 rounded-md border border-beige shadow-sm">
-      <div class="border-b border-beige pb-3">
-        <h2 class="font-heading text-xl font-bold text-primary">4. Éléments de Formulaire (Dev 3 — Rime)</h2>
-      </div>
-
-      <form class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl" onsubmit="return false;">
-        <!-- Input Normal -->
-        <div class="space-y-1.5">
-          <label for="comp-nom" class="block text-xs font-semibold uppercase tracking-wider text-charbon"> Nom complet <span class="text-secondary" aria-hidden="true">*</span> </label>
-          <input
-            type="text"
-            id="comp-nom"
-            name="nom"
-            required
-            placeholder="Votre nom"
-            class="w-full px-md py-sm bg-ivoire border border-beige rounded-md text-charbon placeholder:text-charbon/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm transition-all"
-          />
         </div>
 
-        <!-- Input avec Erreur -->
-        <div class="space-y-1.5">
-          <label for="comp-email" class="block text-xs font-semibold uppercase tracking-wider text-charbon"> Adresse e-mail <span class="text-secondary" aria-hidden="true">*</span> </label>
-          <input
-            type="email"
-            id="comp-email"
-            name="email"
-            required
-            value="email-invalide"
-            aria-invalid="true"
-            aria-describedby="email-error"
-            class="w-full px-md py-sm bg-ivoire border border-red-500 rounded-md text-charbon focus:outline-none focus:ring-2 focus:ring-red-500 text-sm transition-all"
-          />
-          <p id="email-error" class="text-xs text-red-600 font-medium">Veuillez saisir une adresse e-mail valide.</p>
-        </div>
-
-        <!-- Textarea -->
-        <div class="md:col-span-2 space-y-1.5">
-          <label for="comp-message" class="block text-xs font-semibold uppercase tracking-wider text-charbon"> Votre Message <span class="text-secondary" aria-hidden="true">*</span> </label>
-          <textarea
-            id="comp-message"
-            name="message"
-            rows="4"
-            required
-            placeholder="Écrivez votre demande..."
-            class="w-full px-md py-sm bg-ivoire border border-beige rounded-md text-charbon placeholder:text-charbon/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm transition-all"
-          ></textarea>
-        </div>
-      </form>
-    </section>
-
-    <!-- ================================================================= -->
-    <!-- ZONE 5 : DEV 4 (MOHAMED) — LIGNE PANIER & FOOTER                  -->
-    <!-- ================================================================= -->
-    <section class="max-w-7xl mx-auto space-y-8 bg-white p-6 sm:p-8 rounded-md border border-beige shadow-sm">
-      <div class="border-b border-beige pb-3">
-        <h2 class="font-heading text-xl font-bold text-primary">5. Ligne de Panier & Pied de page (Dev 4 — Mohamed)</h2>
-      </div>
-
-      <!-- Ligne de Panier -->
-      <div class="space-y-3">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-charbon/60">Composant Ligne Panier</h3>
-        <div class="bg-ivoire border border-beige p-md rounded-md flex items-center justify-between gap-4 max-w-2xl">
-          <div class="flex items-center gap-4">
-            <div class="w-16 h-16 bg-beige rounded-sm overflow-hidden flex-shrink-0">
-              <img src="images/savon.jpg" alt="Savon artisanal à l'argan" class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h4 class="font-heading text-sm font-semibold text-charbon">Savon à l'argan</h4>
-              <span class="text-xs text-charbon/60">Poids : 150g</span>
-              <div class="text-sm font-bold text-primary mt-1">60 MAD</div>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <!-- Quantité -->
-            <div class="flex items-center border border-beige bg-white rounded-sm">
-              <button type="button" aria-label="Diminuer la quantité" class="px-2 py-1 text-charbon hover:text-primary">-</button>
-              <span class="px-2 text-xs font-semibold">1</span>
-              <button type="button" aria-label="Augmenter la quantité" class="px-2 py-1 text-charbon hover:text-primary">+</button>
-            </div>
-
-            <!-- Bouton Supprimer -->
-            <button type="button" aria-label="Supprimer cet article" class="p-2 text-charbon/50 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-sm">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-              </svg>
-            </button>
-          </div>
+        <!-- Copyright line -->
+        <div class="footer-copyright">
+          <p>Copyright © 2026 • ABC Company.</p>
         </div>
       </div>
-
-      <!-- Pied de page (Footer) -->
-      <div class="space-y-3">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-charbon/60">Pied de Page Accessible</h3>
-        <footer class="bg-primary text-white rounded-md p-6 sm:p-10 space-y-8">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <span class="font-heading text-lg font-bold">L'Atelier Naturel</span>
-              <p class="text-white/80 text-xs sm:text-sm mt-2">Boutique écoresponsable dédiée aux produits artisanaux et naturels marocains.</p>
-            </div>
-            <div>
-              <span class="font-heading text-sm font-semibold uppercase tracking-wider">Navigation</span>
-              <ul class="mt-2 space-y-1.5 text-xs sm:text-sm text-white/80">
-                <li><a href="index.html" class="hover:underline">Accueil</a></li>
-                <li><a href="catalogue.html" class="hover:underline">Boutique</a></li>
-                <li><a href="contact.html" class="hover:underline">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <span class="font-heading text-sm font-semibold uppercase tracking-wider">Contact</span>
-              <p class="mt-2 text-xs sm:text-sm text-white/80">Safi, Maroc<br />contact@lateliernaturel.ma</p>
-            </div>
-          </div>
-          <div class="border-t border-white/20 pt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-2">
-            <p>© 2026 L'Atelier Naturel. Tous droits réservés.</p>
-            <div class="flex gap-4">
-              <a href="#" class="hover:underline">Mentions légales</a>
-              <a href="#" class="hover:underline">Confidentialité</a>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </section>
-  </body>
-</html>
+    </footer>
+<!-- footer end -->
