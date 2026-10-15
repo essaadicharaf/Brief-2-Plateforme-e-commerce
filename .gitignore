@@ -1,1 +1,4 @@
 ﻿node_modules/
+if (-not (Select-String -Path .gitignore -Pattern "^node_modules/" -Quiet -ErrorAction SilentlyContinue)) {
+    Add-Content -Path .gitignore -Value "`nnode_modules/"
+}
