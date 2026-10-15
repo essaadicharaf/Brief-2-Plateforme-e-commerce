@@ -1,8 +1,6 @@
-
-
 body {
-    background-color: var(--couleur-fond);
-    color: var(--couleur-texte);
+    background-color: var(--color-surface);
+    color: var(--color-text);
 }
 
 .bas {
@@ -37,13 +35,13 @@ body {
 
 /* footer  */
 .footer {
-    border-top: var(--couleur-principal) 3px solid;
-    background-color: var(--couleur-fond);
+    border-top: var(--color-primary) 3px solid;
+    background-color: var(--color-background);
     padding-top: 32px;
     padding-bottom: 24px;
     font-size: 12px;
     line-height: 16px;
-    color: var(--fond-secondaire);
+    color: var(--color-secondary);
     margin: 0 20px;
 }
 .footer-container {
@@ -69,7 +67,7 @@ body {
     margin-top: 65px;
 }
 .footer-text {
-    color: var(--couleur-texte);
+    color: var(--color-text);
 }
 .social-label {
     color: #252a2579;
@@ -78,12 +76,12 @@ body {
     font-size: small;
 }
 .icon {
-    color: var(--couleur-principal);
+    color: var(--color-primary);
     margin: 3px 0;
 }
 .footer-copyright {
     text-align: center;
-    color: var(--couleur-principal);
+    color: var(--color-primary);
     margin-top: 15px;
 }
 
@@ -105,7 +103,7 @@ body {
     }
     .footer-copyright {
         text-align: center;
-        color: var(--couleur-principal);
+        color: var(--color-primary);
         margin-top: 30px;
     }
 }

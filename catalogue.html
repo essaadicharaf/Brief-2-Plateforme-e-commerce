@@ -17,7 +17,7 @@
     </head>
     <body class="bg-background text-text font-body min-h-screen flex flex-col justify-between antialiased">
         <!-- ================================================================= -->
-        <!-- 1. HEADER (Pure Tailwind CSS - Zero JavaScript)                   -->
+        <!-- 1. HEADER -->
         <!-- ================================================================= -->
         <header class="bg-primary text-white sticky top-0 z-50 shadow-sm">
             <input type="checkbox" id="menu-toggle" class="peer hidden" />
@@ -30,7 +30,6 @@
                     </div>
                 </a>
 
-                <!-- Actions : Panier + Navigation Desktop + Toggle Mobile -->
                 <div class="flex items-center gap-3">
                     <!-- Liens Desktop & Tablette -->
                     <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Navigation principale">
@@ -53,7 +52,7 @@
                         <span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
                     </a>
 
-                    <!-- Bouton Burger / Close (Mobile 375px) -->
+                    <!-- Bouton Burger  -->
                     <label for="menu-toggle" class="md:hidden p-1 text-white cursor-pointer select-none focus:outline-none focus:ring-2 focus:ring-white/40 rounded-sm" aria-label="Menu de navigation">
                         <svg width="24" height="24" class="w-6 h-6 block peer-checked:hidden shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
@@ -73,9 +72,8 @@
             </nav>
         </header>
 
-        <!-- ================================================================= -->
-        <!-- 2. CONTENU PRINCIPAL                                              -->
-        <!-- ================================================================= -->
+        <!-- 2. CONTENU PRINCIPAL   -->
+
         <main class="max-w-[1280px] mx-auto px-md md:px-xl lg:px-12 w-full flex-1">
             <!-- Fil d'Ariane -->
             <nav aria-label="Fil d'Ariane" class="pt-5 pb-2 text-xs md:text-sm text-text">
@@ -96,7 +94,7 @@
             <div class="mt-2 mb-4">
                 <h1 class="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-text">Notre Catalogue</h1>
 
-                <!-- Descriptif et Compteur (Tablette & Desktop) -->
+                
                 <div class="hidden md:flex justify-between items-center text-xs md:text-sm text-text/80 mt-1.5 pb-2 border-b border-surface">
                     <p>Découvrez l'ensemble de nos créations artisanales et naturelles.</p>
                     <span class="font-medium">6 articles disponibles</span>
@@ -129,9 +127,7 @@
                 <button type="button" class="bg-surface/50 text-text px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium hover:bg-surface transition-colors">Bougies artisanales</button>
             </div>
 
-            <!-- ================================================================= -->
             <!-- 3. GRILLE DE PRODUITS -->
-            <!-- ================================================================= -->
             <section aria-label="Liste des produits" class="mt-4 mb-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
                     <!-- Produit 1 : Savon Noir -->
@@ -265,10 +261,8 @@
             </section>
         </main>
 
-        <!-- ================================================================= -->
-        <!-- 4. FOOTER                                                         -->
-        <!-- ================================================================= -->
-        <!-- footer start -->
+        <!-- 4. FOOTER  -->
+   
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-main">
@@ -344,12 +338,10 @@
                     </div>
                 </div>
 
-                <!-- Copyright line -->
                 <div class="footer-copyright">
                     <p>Copyright © 2026 • ABC Company.</p>
                 </div>
             </div>
         </footer>
-        <!-- footer end -->
     </body>
 </html>
