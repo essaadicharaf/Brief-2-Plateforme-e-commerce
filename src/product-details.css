@@ -1,0 +1,13 @@
+.product-image {
+    object-position: center;
+}
+.buy_button{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-top: 20px;
+}
+main{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
