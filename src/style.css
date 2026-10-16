@@ -1,0 +1,135 @@
+body {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+.bas {
+    color: Sienna;
+}
+.tag {
+    background-color: aqua;
+    border-radius: 30% 30%;
+    padding: 4px;
+}
+.info {
+    background-color: white;
+    border-radius: 20px;
+}
+.rem {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.plus-b {
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+/* mt-3 inline-flex gap-4 rounded-full border bg-stone-100 px-3 py-1 */
+.quantity {
+    display: flex;
+}
+* {
+    box-sizing: border-box;
+}
+/* -----------------------Acceuil---------------------------- */
+.hero {
+    background-image: url(/images/olive-skincare.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #2b483b;
+}
+
+p,
+h1,
+h2 {
+    color: #355c4a;
+}
+
+.categories a,
+.produits a {
+    color: #355c4a;
+}
+
+/* footer  */
+.footer {
+    border-top: var(--color-primary) 3px solid;
+    background-color: var(--color-background);
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-secondary);
+    margin: 0 20px;
+}
+.footer-container {
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 65px;
+}
+.footer-text {
+    color: var(--color-text);
+}
+.social-label {
+    color: #252a2579;
+    margin-top: 7.5px;
+    margin-right: 3px;
+    font-size: small;
+}
+.icon {
+    color: var(--color-primary);
+    margin: 3px 0;
+}
+.footer-copyright {
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: 15px;
+}
+
+/* footer responsivnes mobile */
+@media (max-width: 380px) {
+    .footer-logo {
+        display: none;
+    }
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 12px;
+    }
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .footer-copyright {
+        text-align: center;
+        color: var(--color-primary);
+        margin-top: 30px;
+    }
+}
+
+/* start contact */
+
+/* end contact */
