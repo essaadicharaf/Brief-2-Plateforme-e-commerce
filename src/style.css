@@ -94,6 +94,29 @@ h6 {
     gap: var(--spacing-sm);
 }
 
+/* -----------------------Acceuil---------------------------- */
+.hero {
+    background-image: url(/images/olive-skincare.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #2b483b;
+}
+
+p,
+h1,
+h2 {
+    color: #355c4a;
+}
+
+.categories a,
+.produits a {
+    color: #355c4a;
+}
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
