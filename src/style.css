@@ -114,7 +114,7 @@ body {
   /* gap: 16px; */
   justify-content: space-between;
   max-width: 720px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 15px;
   background-color: var(--color-background);
   border: 1px solid #e4dccb;
@@ -261,7 +261,7 @@ body {
   border-radius: 16px;
   padding: 20px;
   max-width: 440px;
-  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
 }
 .summ-title {
   font-size: 16px;
@@ -337,3 +337,31 @@ body {
   font-size: 11px;
   font-weight: 600;
 }
+.quote {
+  margin: 10px 0 0;
+  padding: 0 10px;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-primary);
+}
+.quote cite {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--color-accent);
+}
+/* page layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 20px;
+  align-items: start;
+}
+.right {
+  margin-top: 149px;
+}
+
