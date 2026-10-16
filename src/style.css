@@ -1,6 +1,16 @@
+
+:root{
+  --couleur-fond:#FAF7F0;
+  --fond-secondaire:#2E7D32;
+  --couleur-texte:#252A25;
+  --couleur-principal:#355C4A;
+  --couleur-secondaire:#C77B4A;
+}
+
+
 body {
-    background-color: var(--color-surface);
-    color: var(--color-text);
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
 }
 
 .bas {
@@ -33,15 +43,38 @@ body {
     box-sizing: border-box;
 }
 
+/* -----------------------Acceuil---------------------------- */
+.hero {
+    background-image: url(/images/olive-skincare.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #2B483B;
+}
+
+p,
+h1,
+h2 {
+    color: #355C4A;
+}
+
+.categories a,
+.produits a{
+    color: #355C4A;
+}
+
 /* footer  */
 .footer {
-    border-top: var(--color-primary) 3px solid;
-    background-color: var(--color-background);
+    border-top: var(--couleur-principal) 3px solid;
+    background-color: var(--couleur-fond);
     padding-top: 32px;
     padding-bottom: 24px;
     font-size: 12px;
     line-height: 16px;
-    color: var(--color-secondary);
+    color: var(--fond-secondaire);
     margin: 0 20px;
 }
 .footer-container {
@@ -67,7 +100,7 @@ body {
     margin-top: 65px;
 }
 .footer-text {
-    color: var(--color-text);
+    color: var(--couleur-texte);
 }
 .social-label {
     color: #252a2579;
@@ -76,12 +109,12 @@ body {
     font-size: small;
 }
 .icon {
-    color: var(--color-primary);
+    color: var(--couleur-principal);
     margin: 3px 0;
 }
 .footer-copyright {
     text-align: center;
-    color: var(--color-primary);
+    color: var(--couleur-principal);
     margin-top: 15px;
 }
 
@@ -103,12 +136,7 @@ body {
     }
     .footer-copyright {
         text-align: center;
-        color: var(--color-primary);
+        color: var(--couleur-principal);
         margin-top: 30px;
     }
 }
-
-/* start contact */
-
-
-/* end contact */
