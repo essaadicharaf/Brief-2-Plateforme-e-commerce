@@ -16,14 +16,10 @@
         <link rel="stylesheet" href="src/input.css" />
     </head>
     <body class="bg-background text-text font-body min-h-screen flex flex-col justify-between antialiased">
-        <!-- ================================================================= -->
-        <!-- 1. HEADER -->
-        <!-- ================================================================= -->
         <header class="bg-primary text-white sticky top-0 z-50 shadow-sm">
             <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
             <div class="max-w-[1280px] mx-auto px-md md:px-xl lg:px-12 h-14 md:h-16 flex items-center justify-between">
-                <!-- Logo Arche DarNature -->
                 <a href="index.html" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/40 rounded-sm" aria-label="DarNature - Accueil">
                     <div class="bg-background w-8 h-8 md:w-9 md:h-9 rounded-md flex items-center justify-center p-1.5 shadow-xs">
                         <img src="images/logo.png" alt="logo DarNature" class="w-full h-full object-contain" />
@@ -31,14 +27,12 @@
                 </a>
 
                 <div class="flex items-center gap-3">
-                    <!-- Liens Desktop & Tablette -->
                     <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Navigation principale">
                         <a href="index.html" class="text-white/80 hover:text-white pb-0.5 border-b-2 border-transparent transition-colors">Accueil</a>
                         <a href="catalogue.html" class="text-white font-semibold pb-0.5 border-b-2 border-white transition-colors" aria-current="page">Catalogue</a>
                         <a href="contact.html" class="text-white/80 hover:text-white pb-0.5 border-b-2 border-transparent transition-colors">Contact</a>
                     </nav>
 
-                    <!-- Panier -->
                     <a
                         href="panier.html"
                         aria-label="Voir le panier d'achat"
@@ -52,7 +46,6 @@
                         <span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
                     </a>
 
-                    <!-- Bouton Burger  -->
                     <label for="menu-toggle" class="md:hidden p-1 text-white cursor-pointer select-none focus:outline-none focus:ring-2 focus:ring-white/40 rounded-sm" aria-label="Menu de navigation">
                         <svg width="24" height="24" class="w-6 h-6 block peer-checked:hidden shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
@@ -64,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- Tiroir Mobile -->
             <nav aria-label="Navigation mobile" class="hidden peer-checked:block md:hidden bg-primary/95 border-t border-white/10 px-md py-md space-y-2">
                 <a href="index.html" class="block py-2 px-3 text-sm font-medium rounded-md text-white/80 hover:text-white hover:bg-white/5 transition-colors">Accueil</a>
                 <a href="catalogue.html" class="block py-2 px-3 text-sm font-medium rounded-md bg-white/10 text-white" aria-current="page">Catalogue</a>
@@ -72,10 +64,7 @@
             </nav>
         </header>
 
-        <!-- 2. CONTENU PRINCIPAL   -->
-
         <main class="max-w-[1280px] mx-auto px-md md:px-xl lg:px-12 w-full flex-1">
-            <!-- Fil d'Ariane -->
             <nav aria-label="Fil d'Ariane" class="pt-5 pb-2 text-xs md:text-sm text-text">
                 <ol class="flex items-center gap-1.5 flex-wrap">
                     <li>
@@ -90,18 +79,15 @@
                 </ol>
             </nav>
 
-            <!-- En-tête Catalogue -->
             <div class="mt-2 mb-4">
                 <h1 class="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-text">Notre Catalogue</h1>
 
-                
                 <div class="hidden md:flex justify-between items-center text-xs md:text-sm text-text/80 mt-1.5 pb-2 border-b border-surface">
                     <p>Découvrez l'ensemble de nos créations artisanales et naturelles.</p>
                     <span class="font-medium">6 articles disponibles</span>
                 </div>
             </div>
 
-            <!-- Barre de Recherche -->
             <div class="relative w-full my-4">
                 <label for="search-input" class="sr-only">Rechercher un produit</label>
                 <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-text/60">
@@ -117,7 +103,6 @@
                 />
             </div>
 
-            <!-- Filtres Catégories -->
             <div class="flex flex-wrap items-center gap-2 mb-6 md:mb-8" role="group" aria-label="Filtres par catégorie">
                 <button type="button" class="bg-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium shadow-xs">Tous</button>
                 <button type="button" class="bg-surface/50 text-text px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium hover:bg-surface transition-colors">Savons artisanaux</button>
@@ -127,10 +112,8 @@
                 <button type="button" class="bg-surface/50 text-text px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium hover:bg-surface transition-colors">Bougies artisanales</button>
             </div>
 
-            <!-- 3. GRILLE DE PRODUITS -->
             <section aria-label="Liste des produits" class="mt-4 mb-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
-                    <!-- Produit 1 : Savon Noir -->
                     <article class="bg-white rounded-lg p-md shadow-sm border border-surface flex flex-col justify-between">
                         <div>
                             <div class="relative bg-surface/40 rounded-lg h-56 md:h-60 w-full overflow-hidden flex items-center justify-center">
@@ -152,7 +135,6 @@
                         </button>
                     </article>
 
-                    <!-- Produit 2 : Panier en jonc -->
                     <article class="bg-white rounded-lg p-md shadow-sm border border-surface flex flex-col justify-between">
                         <div>
                             <div class="relative bg-surface/40 rounded-lg h-56 md:h-60 w-full overflow-hidden flex items-center justify-center">
@@ -174,7 +156,6 @@
                         </button>
                     </article>
 
-                    <!-- Produit 3 : Huile d'argan -->
                     <article class="bg-white rounded-lg p-md shadow-sm border border-surface flex flex-col justify-between">
                         <div>
                             <div class="relative bg-surface/40 rounded-lg h-56 md:h-60 w-full overflow-hidden flex items-center justify-center">
@@ -194,7 +175,6 @@
                         </button>
                     </article>
 
-                    <!-- Produit 4 : Bol en céramique -->
                     <article class="bg-white rounded-lg p-md shadow-sm border border-surface flex flex-col justify-between">
                         <div>
                             <div class="relative bg-surface/40 rounded-lg h-56 md:h-60 w-full overflow-hidden flex items-center justify-center">
@@ -215,8 +195,6 @@
                             Ajouter au panier
                         </button>
                     </article>
-
-                    <!-- Produit 5 : Bougie fleur de coton -->
                     <article class="bg-white rounded-lg p-md shadow-sm border border-surface flex flex-col justify-between">
                         <div>
                             <div class="relative bg-surface/40 rounded-lg h-56 md:h-60 w-full overflow-hidden flex items-center justify-center">
@@ -236,7 +214,6 @@
                         </button>
                     </article>
 
-                    <!-- Produit 6 : Coffret bien-être -->
                     <article class="bg-white rounded-lg p-md shadow-sm border border-surface flex flex-col justify-between">
                         <div>
                             <div class="relative bg-surface/40 rounded-lg h-56 md:h-60 w-full overflow-hidden flex items-center justify-center">
@@ -260,20 +237,14 @@
                 </div>
             </section>
         </main>
-
-        <!-- 4. FOOTER  -->
-   
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-main">
-                    <!-- Logo -->
                     <div class="footer-logo">
                         <img src="images/logo.png" alt="ABC Company logo" width="200" height="200" />
                     </div>
 
-                    <!-- Contact -->
                     <div class="footer-contact">
-                        <!-- Address -->
                         <div class="contact-item">
                             <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -281,7 +252,6 @@
                             <span class="footer-text">ABC Company, 123 East, 17th Street, St. louis 10001</span>
                         </div>
 
-                        <!-- Email -->
                         <div class="contact-item">
                             <svg class="icon" width="23" height="23" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -294,7 +264,6 @@
                             <a class="footer-text" href="mailto:absdem@gmail.com">absdem@gmail.com</a>
                         </div>
 
-                        <!-- Phone -->
                         <div class="contact-item">
                             <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -305,11 +274,10 @@
                         </div>
                     </div>
 
-                    <!-- Social media -->
+                    >
                     <div class="footer-social">
                         <span class="social-label">Social Media</span>
 
-                        <!-- X -->
                         <a href="#" aria-label="Twitter" class="social-link">
                             <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -318,7 +286,6 @@
                             </svg>
                         </a>
 
-                        <!-- Ln -->
                         <a href="#" aria-label="LinkedIn" class="social-link">
                             <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -327,7 +294,6 @@
                             </svg>
                         </a>
 
-                        <!-- Insta -->
                         <a href="#" aria-label="Instagram" class="social-link">
                             <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
