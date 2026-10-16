@@ -102,19 +102,14 @@ h6 {
     background-repeat: no-repeat;
 }
 
-h1 {
-    color: #2b483b;
-}
-
-p,
-h1,
-h2 {
-    color: #355c4a;
+.hero h1 {
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .categories a,
 .produits a {
-    color: #355c4a;
+    color: var(--color-text);
 }
 
 /* ==========================================================================
