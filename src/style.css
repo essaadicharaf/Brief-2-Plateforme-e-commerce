@@ -95,6 +95,11 @@ h6 {
 }
 
 /* -----------------------Acceuil---------------------------- */
+main {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
 .hero {
     background-image: url(/images/olive-skincare.png);
     background-size: cover;
@@ -104,12 +109,46 @@ h6 {
 
 .hero h1 {
     font-size: xx-large;
-    font-weight: bolder;
 }
 
-.categories a,
+.card {
+    background-color: var(--color-surface);
+    border-radius: 10px;
+    padding: 2px 10px ;
+    width: 700px;
+}
+
+.card h2 {
+    padding: 12px;
+}
+
+.card h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.categories img {
+    display: block;
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+/* .categories a,
 .produits a {
     color: var(--color-text);
+} */
+
+.categories h1 {
+    font-size: x-large;
+}
+
+.categories h2 {
+    font-size: small;
 }
 
 /* ==========================================================================
