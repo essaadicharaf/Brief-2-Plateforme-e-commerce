@@ -174,7 +174,7 @@ body {
   background-color: #f1ede191;
   border: 1px solid #e4dccb;
   border-radius: 10px;
-  margin:0 0 20px;
+  margin: 0 0 20px;
 }
 .notes-cont {
   width: 100%;
@@ -204,7 +204,6 @@ body {
   margin: 0;
   background-color: #dda94f49;
   border-radius: 6px;
-
 }
 .prm-btn {
   color: var(--color-primary);
@@ -298,7 +297,7 @@ body {
 .box-pk {
   background-color: white;
   padding: 10px 20px;
-  margin: 0 0  20px;
+  margin: 0 0 20px;
   /* max-width: 440px; */
   border-radius: 16px;
   border: 1px solid rgba(128, 128, 128, 0.219);
@@ -348,7 +347,7 @@ body {
   max-width: 920px;
   margin: 0 auto;
 }
-.left{
+.left {
   min-width: 0;
 }
 /* footer responsivnes mobile */
@@ -373,21 +372,21 @@ body {
     margin-top: 30px;
   }
   .prm-input {
-  border: 2px solid #dda94f4b;
-  padding: 10px 24px;
-  margin: 0;
-  background-color: #dda94f49;
-  border-radius: 6px;
-  width:550px;
+    border: 2px solid #dda94f4b;
+    padding: 10px 24px;
+    margin: 0;
+    background-color: #dda94f49;
+    border-radius: 6px;
+    width: 550px;
+  }
 }
-}
-@media (max-width: 900px){
-  .layout{
+@media (max-width: 900px) {
+  .layout {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width:480px){
-.yo-bas{
-  font-size: 30px;
-}
+@media (max-width: 480px) {
+  .yo-bas {
+    font-size: 30px;
+  }
 }
