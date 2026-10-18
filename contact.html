@@ -1,155 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Catalogue officiel DarNature — Produits artisanaux, soins naturels et créations écoresponsables." />
-    <title>Notre Catalogue — DarNature</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Catalogue officiel DarNature — Produits artisanaux, soins naturels et créations écoresponsables." />
+  <title>Contact — DarNature</title>
+>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- Google Fonts: Poppins & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/input.css" />
 
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="src/style.css" />
+  <style>
+    /* Main page container & font styling */
+    .contact-page {
+      width: 100%;
+      background-color: #FAF7F0;
+      color: #252A25;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Inner layout container */
+    .contact-container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 38px 8.2% 50px;
+    }
+
+    /* Section title styling */
+    .contact-title {
+      margin: 0 0 25px;
+      color: #252A25;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.35;
+      letter-spacing: 0.5px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+    }
+
+    /* Form structure */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+    }
+
+    /* Individual form field group */
+    .contact-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+    }
+
+    /* Labels styling matching the modern reference */
+    .contact-field label {
+      color: #252A25;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Input & Textarea fields using original colors and sizes */
+    .contact-field input,
+    .contact-field textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 17px 25px;
+      border: 1.5px solid #B9AEA0;
+      border-radius: 15px;
+      background-color: #E8E0D2;
+      color: #252A25;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+    }
+
+    .contact-field input {
+      height: 63px;
+    }
+
+    .contact-field textarea {
+      min-height: 128px;
+      resize: vertical;
+    }
+
+    /* Placeholders styling */
+    .contact-field input::placeholder,
+    .contact-field textarea::placeholder {
+      color: #6F6A61;
+      opacity: 0.8;
+    }
+
+    /* Active focus state */
+    .contact-field input:focus,
+    .contact-field textarea:focus {
+      outline: 2px solid #355C4A;
+      outline-offset: 1px;
+    }
+
+    /* Submit button styling */
+    .contact-button {
+      width: 150px;
+      height: 50px;
+      max-width: 100%;
+      margin-top: 1px;
+      padding: 0 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #355C4A;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background-color: #294839;
+    }
+
+    /* Mobile Responsive Design */
+    @media (max-width: 768px) {
+      .contact-container {
+        padding: 28px 6% 35px;
+      }
+
+      .contact-title {
+        font-size: 24px;
+      }
+
+      .contact-field label {
+        font-size: 12px;
+      }
+
+      .contact-field input,
+      .contact-field textarea {
+        padding: 15px 18px;
+        font-size: 15px;
+      }
+
+      .contact-field input {
+        height: 56px;
+      }
+
+      .contact-button {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
-<body>
 
-    <!-- ================= HEADER / NAVBAR ================= -->
-    
+<body class="bg-background text-text font-body min-h-screen flex flex-col justify-between antialiased">
 
-    <!-- ================= MAIN CONTENT / FORM ================= -->
-    <main>
-        <section class="contact-section">
-            <h1>FORMULAIRE DE<br>CONTACT</h1>
-            
-            <form action="#" method="POST" class="contact-form">
-                
-                <!-- Nom complet -->
-                <div class="form-group">
-                    <label for="fullname">Nom complet</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="p. ex. Jean Dupont" required>
-                </div>
+  <header class="bg-[#355C4A] text-white sticky top-0 z-50 shadow-sm">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
-                <!-- Adresse e-mail -->
-                <div class="form-group">
-                    <label for="email">Adresse e-mail</label>
-                    <input type="email" id="email" name="email" placeholder="p. ex. dupont@email.com" required>
-                </div>
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 h-14 md:h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html"
+        class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/40 rounded-sm"
+        aria-label="DarNature - Accueil">
+        <div class="bg-[#FAF7F0] w-8 h-8 md:w-9 md:h-9 rounded-md flex items-center justify-center p-1.5 shadow-xs">
+          <img src="images/logo.png" alt="Logo DarNature" />
+        </div>
+      </a>
 
-                <!-- Téléphone -->
-                <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+212 524 000 000">
-                </div>
+      <div class="flex items-center gap-3">
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Navigation principale">
+          <a href="index.html"
+            class="text-white/80 hover:text-white pb-0.5 border-b-2 border-transparent transition-colors">Accueil</a>
+          
+          <a href="catalogue.html"
+            class="text-white/80 hover:text-white pb-0.5 border-b-2 border-transparent transition-colors">Catalogue</a>
+          
+          <a href="contact.html" class="text-white font-semibold pb-0.5 border-b-2 border-white transition-colors"
+            aria-current="page">Contact</a>
+        </nav>
 
-                <!-- Sujet -->
-                <div class="form-group">
-                    <label for="subject">Sujet</label>
-                    <input type="text" id="subject" name="subject" placeholder="Sujet de votre message">
-                </div>
+        <!-- Shopping Cart Icon -->
+        <a href="panier.html" aria-label="Voir le panier d'achat"
+          class="mx-5 relative text-white hover:text-white/80 p-1 focus:outline-none focus:ring-2 focus:ring-white/40 rounded-sm transition-colors">
+          <svg width="24" height="24" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+          </svg>
+          <span
+            class="absolute -top-1 -right-1 bg-[#C77B4A] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+        </a>
 
-                <!-- Message -->
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Votre message ici..."></textarea>
-                </div>
+        <!-- Mobile Hamburger Button -->
+        <label for="menu-toggle"
+          class="md:hidden p-1 text-white cursor-pointer select-none focus:outline-none focus:ring-2 focus:ring-white/40 rounded-sm"
+          aria-label="Menu de navigation">
+          <svg width="24" height="24" class="w-6 h-6 block peer-checked:hidden shrink-0" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg width="24" height="24" class="w-6 h-6 hidden peer-checked:block shrink-0" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+      </div>
+    </div>
 
-                <!-- Submit Button -->
-                <button type="submit" class="btn-submit">ENVOYER LE MESSAGE</button>
-            </form>
-        </section>
-    </main>
+    <!-- Mobile Navigation Drawer -->
+    <nav aria-label="Navigation mobile"
+      class="hidden peer-checked:block md:hidden bg-[#24372D] border-t border-white/10 px-4 py-4 space-y-2">
+      <a href="index.html"
+        class="block py-2 px-3 text-sm font-medium rounded-md text-white/80 hover:text-white hover:bg-white/5 transition-colors">Accueil</a>
+      <a href="catalogue.html" class="block py-2 px-3 text-sm font-medium rounded-md bg-white/10 text-white"
+        aria-current="page">Catalogue</a>
+      <a href="contact.html"
+        class="block py-2 px-3 text-sm font-medium rounded-md text-white/80 hover:text-white hover:bg-white/5 transition-colors">Contact</a>
+    </nav>
+  </header>
+  <!-- HEADER END -->
 
-    <!-- ================= FOOTER ================= -->
-<!-- footer start -->
-     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-main">
+  <main class="contact-page">
+    <section class="contact-container">
+      
+      <!-- Main Title -->
+      <h1 class="contact-title">
+        FORMULAIRE DE CONTACT
+      </h1>
 
-          <!-- Logo -->
-          <div class="footer-logo">
-            <img src="images/logo.png" alt="ABC Company logo" width="200"
-              height="200">
+      <!-- Contact Form -->
+      <form action="#" method="post" class="contact-form">
+        
+        <!-- Full Name Field -->
+        <div class="contact-field">
+          <label for="nom">Nom complet <span style="color: #C77B4A;">*</span></label>
+          <input type="text" id="nom" name="nom" placeholder="p. ex. Jean Dupont" required>
+        </div>
+
+        <!-- Email Address Field -->
+        <div class="contact-field">
+          <label for="email">Adresse e-mail <span style="color: #C77B4A;">*</span></label>
+          <input type="email" id="email" name="email" placeholder="p. ex. dupont@email.com" required>
+        </div>
+
+        <!-- Phone Number Field -->
+        <div class="contact-field">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="+212 524 000 000">
+        </div>
+
+        <!-- Subject Field -->
+        <div class="contact-field">
+          <label for="sujet">Sujet <span style="color: #C77B4A;">*</span></label>
+          <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre message" required>
+        </div>
+
+        <!-- Message Field -->
+        <div class="contact-field">
+          <label for="message">Message <span style="color: #C77B4A;">*</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="contact-button">
+          ENVOYER
+        </button>
+      </form>
+      <!-- End Contact Form -->
+
+    </section>
+  </main>
+  <!-- CONTACT SECTION END -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="ABC Company logo" width="200" height="200" />
+        </div>
+
+        <!-- Footer Contact Info -->
+        <div class="footer-contact">
+          
+          <!-- Address -->
+          <div class="contact-item">
+            <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <span class="footer-text">ABC Company, 123 East, 17th Street, St. louis 10001</span>
           </div>
 
-          <!-- Contact -->
-          <div class="footer-contact">
-
-            <!-- Address -->
-            <div class="contact-item">
-              <svg class="icon" width="23" height="23" fill="currentColor"
-                viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-              </svg>
-              <span class="footer-text">ABC Company, 123 East, 17th Street, St. louis 10001</span>
-            </div>
-
-            <!-- Email -->
-            <div class="contact-item">
-              <svg class="icon" width="23" height="23" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <a class="footer-text" href="mailto:absdem@gmail.com">absdem@gmail.com</a>
-            </div>
-
-            <!-- Phone -->
-            <div class="contact-item">
-              <svg class="icon" width="23" height="23" fill="currentColor"
-                viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-              </svg>
-              <a class="footer-text" href="tel:1234567890">(123) 456-7890</a>
-            </div>
+          <!-- Email -->
+          <div class="contact-item">
+            <svg class="icon" width="23" height="23" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a class="footer-text" href="mailto:absdem@gmail.com">absdem@gmail.com</a>
           </div>
 
-          <!-- Social media -->
-          <div class="footer-social">
-            <span class="social-label">Social Media</span>
-
-            <!-- X -->
-            <a href="#" aria-label="Twitter" class="social-link">
-              <svg class="icon" width="23" height="23" fill="currentColor"
-                viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-              </svg>
-            </a>
-
-            <!-- Ln -->
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <svg class="icon" width="23" height="23" fill="currentColor"
-                viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-              </svg>
-            </a>
-
-            <!-- Insta -->
-            <a href="#" aria-label="Instagram" class="social-link">
-              <svg class="icon" width="23" height="23" fill="currentColor"
-                viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-              </svg>
-            </a>
+          <!-- Phone -->
+          <div class="contact-item">
+            <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <a class="footer-text" href="tel:1234567890">(123) 456-7890</a>
           </div>
         </div>
 
-        <!-- Copyright line -->
-        <div class="footer-copyright">
-          <p>Copyright © 2026 • ABC Company.</p>
+        <!-- Social Media Links -->
+        <div class="footer-social">
+          <span class="social-label">Social Media</span>
+          
+          <a href="#" aria-label="Twitter" class="social-link">
+            <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="LinkedIn" class="social-link">
+            <svg class="icon" width="23" height="23" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
+          </a>
         </div>
       </div>
-    </footer>
-<!-- footer end -->
 
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        <p>Copyright © 2026 • ABC Company.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
 
 </body>
+
 </html>

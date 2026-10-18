@@ -1,44 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.html"],
-    theme: {
-        screens: {
-            sm: "375px",
-            md: "768px",
-            lg: "1280px",
-        },
-        extend: {
-            colors: {
-                primary: {
-                    DEFAULT: "var(--color-primary)",
-                    hover: "#24372D",
-                },
-                secondary: "var(--color-secondary)",
-                background: "var(--color-background)",
-                surface: "var(--color-surface)",
-                text: "var(--color-text)",
-            },
-            fontFamily: {
-                heading: ["var(--font-heading)", "sans-serif"],
-                body: ["var(--font-body)", "sans-serif"],
-            },
-            fontSize: {
-                small: "var(--font-size-small)",
-                body: "var(--font-size-body)",
-                heading: "var(--font-size-heading)",
-            },
-            spacing: {
-                sm: "var(--spacing-sm)",
-                md: "var(--spacing-md)",
-                lg: "var(--spacing-lg)",
-                xl: "var(--spacing-xl)",
-            },
-            borderRadius: {
-                sm: "var(--radius-sm)",
-                md: "var(--radius-md)",
-                lg: "var(--radius-lg)",
-            },
-        },
+  content: ["./*.html", "./src/**/*.{html,js}"],
+  theme: {
+    screens: {
+      'sm': '375px',
+      'md': '768px',
+      'lg': '1280px',
     },
-    plugins: [],
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#355C4A',
+          hover: '#24372D',
+        },
+        secondary: '#C77B4A',
+        background: '#FAF7F0',
+        surface: '#E8E0D2',
+        text: '#252A25',
+      },
+      spacing: {
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '32px',
+      },
+      borderRadius: {
+        sm: '4px',
+        md: '8px',
+        lg: '16px',
+      },
+      fontFamily: {
+        heading: ['Poppins', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
 };
