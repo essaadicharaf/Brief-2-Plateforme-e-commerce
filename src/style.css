@@ -34,6 +34,14 @@ body {
   box-sizing: border-box;
 }
 
+
+.categories img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4%;
+    border: 2px solid #355C4A;
 /* footer  */
 .footer {
   border-top: var(--color-primary) 3px solid;
@@ -51,7 +59,10 @@ body {
   padding: 0 auto;
 }
 
-
+.categories > div > h2,
+.produits > div > h2 {
+    font-size: 1.4rem;
+}
 
 
 /* .hero {
@@ -461,4 +472,9 @@ body {
     border: 2px solid #355C4A;
     margin: 8px auto 0;
   }
+  .categories > div > h2,
+.produits > div > h2 {
+    font-size: 1.7rem;
+}
+}
 }
