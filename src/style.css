@@ -101,9 +101,6 @@ main {
     color: var(--color-text);
 }
 
-h2 {
-    font-size: x-large;
-}
 
 .categories img {
     width: 100%;
@@ -114,7 +111,10 @@ h2 {
     border: 2px solid #355C4A;
 }
 
-
+.categories > div > h2,
+.produits > div > h2 {
+    font-size: 1.4rem;
+}
 
 
 /* .hero {
@@ -287,4 +287,8 @@ h2 {
     border: 2px solid #355C4A;
     margin: 8px auto 0;
   }
+  .categories > div > h2,
+.produits > div > h2 {
+    font-size: 1.7rem;
+}
 }
