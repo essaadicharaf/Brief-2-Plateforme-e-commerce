@@ -49,33 +49,240 @@
       </div>
 
     </header>
+
     <main class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 w-full flex-1">
-      <div class="flex gap-4 rounded-xl border bg-white p-5">
-
-        <div class="h-16 w-16 rounded-lg bg-orange-300"></div>
-
-        <div class="flex-1">
-          <span
-            class="rounded-full bg-green-100 px-2 py-1 text-xs text-green-800">Preserves</span>
-          <h3 class="mt-2 font-serif text-lg">Raw Wildflower Honey</h3>
-          <p class="text-xs text-gray-500">by Meadow Lane Apiary</p>
-          <p class="text-xs text-gray-500">450g glass jar · Unfiltered &
-            cold-pressed</p>
-
-          <div
-            class=" quantity ">
-            <button>−</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+  
+  <div class="card-page">
+      <!-- text befor the cards -->
+        <div class="txt-above">
+          <a class="ret-btn" href="catalogue.html">← Continue shopping</a>
+          <!-- <button class="ret-btn" >← Continue shopping</button> -->
+          <h1 class="yo-bas">Your Basket</h1>
+          <p class="items-selcted">5 items selected</p>
         </div>
+    <div class="layout">
+      <!-- left -->
+      <div class="left">
 
-        <div class="mr-4 flex flex-col justify-between text-right ">
-          <p class="text-lg font-bold text-green-900">$24.00</p>
-          <button class="text-xs font-semibold text-orange-600">Remove</button>
-        </div>
+        <!-- this section is for the cards -->
+        <section class="cards">
+          <article class="cart-item">
 
+            <img class="item-image" src="images/bol-ceramique.png"
+              alt="prod-img"
+              height="120px" width="120px">
+
+            <!-- Prod info -->
+            <div class="item-info">
+              <span class="item-badge">Preserves</span>
+              <h3 class="item-title">Raw Wildflower Honey</h3>
+              <p class="item-seller">by Meadow Lane Apiary</p>
+              <p class="item-details">450g glass jar · Unfiltered &
+                cold-pressed</p>
+
+              <!-- Quant -->
+              <div class="quantity">
+                <button type="button" class="quantity-btn" >−</button>
+                <span class="quantity-value">1</span>
+                <button type="button" class="quantity-btn" >+</button>
+              </div>
+            </div>
+
+            <!-- Price + remove -->
+            <div class="item-side">
+              <span class="item-price"><b>$24.00</b></span>
+              <a href="#" class="item-remove">Remove</a>
+            </div>
+
+          </article>
+          <article class="cart-item">
+
+            <img class="item-image" src="images/bol-ceramique.png"
+              alt="prod-img"
+              height="120px" width="120px">
+
+            <!-- Prod info -->
+            <div class="item-info">
+              <span class="item-badge">Preserves</span>
+              <h3 class="item-title">Raw Wildflower Honey</h3>
+              <p class="item-seller">by Meadow Lane Apiary</p>
+              <p class="item-details">450g glass jar · Unfiltered &
+                cold-pressed</p>
+
+              <!-- Quant -->
+              <div class="quantity">
+                <button type="button" class="quantity-btn" >−</button>
+                <span class="quantity-value">2</span>
+                <button type="button" class="quantity-btn" >+</button>
+              </div>
+            </div>
+
+            <!-- Price + remove -->
+            <div class="item-side">
+              <span class="item-price"><b>$24.00</b></span>
+              <a href="#" class="item-remove">Remove</a>
+            </div>
+
+          </article>
+          <article class="cart-item">
+
+            <img class="item-image" src="images/bol-ceramique.png"
+              alt="prod-img"
+              height="120px" width="120px">
+
+            <!-- Prod info -->
+            <div class="item-info">
+              <span class="item-badge">Preserves</span>
+              <h3 class="item-title">Raw Wildflower Honey</h3>
+              <p class="item-seller">by Meadow Lane Apiary</p>
+              <p class="item-details">450g glass jar · Unfiltered &
+                cold-pressed</p>
+
+              <!-- Quant -->
+              <div class="quantity">
+                <button type="button" class="quantity-btn" >−</button>
+                <span class="quantity-value">4</span>
+                <button type="button" class="quantity-btn" >+</button>
+              </div>
+            </div>
+
+            <!-- Price + remove -->
+            <div class="item-side">
+              <span class="item-price"><b>$24.00</b></span>
+              <a href="#" class="item-remove">Remove</a>
+            </div>
+
+          </article>
+          <article class="cart-item">
+
+            <img class="item-image" src="images/bol-ceramique.png"
+              alt="prod-img"
+              height="120px" width="120px">
+
+            <!-- Prod info -->
+            <div class="item-info">
+              <span class="item-badge">Preserves</span>
+              <h3 class="item-title">Raw Wildflower Honey</h3>
+              <p class="item-seller">by Meadow Lane Apiary</p>
+              <p class="item-details">450g glass jar · Unfiltered &
+                cold-pressed</p>
+
+              <!-- Quant -->
+              <div class="quantity">
+                <button type="button" class="quantity-btn"
+                  id="minusq">−</button>
+                <span class="quantity-value">0</span>
+                <button type="button" class="quantity-btn" >+</button>
+              </div>
+            </div>
+
+            <!-- Price + remove -->
+            <div class="item-side">
+              <span class="item-price"><b>$24.00</b></span>
+              <a href="#" class="item-remove">Remove</a>
+            </div>
+
+          </article>
+          <article class="cart-item">
+
+            <img class="item-image" src="images/bol-ceramique.png"
+              alt="prod-img"
+              height="120px" width="120px">
+
+            <!-- Prod info -->
+            <div class="item-info">
+              <span class="item-badge">Preserves</span>
+              <h3 class="item-title">Raw Wildflower Honey</h3>
+              <p class="item-seller">by Meadow Lane Apiary</p>
+              <p class="item-details">450g glass jar · Unfiltered &
+                cold-pressed</p>
+
+              <!-- Quant -->
+              <div class="quantity">
+                <button type="button" class="quantity-btn" >−</button>
+                <span class="quantity-value">3</span>
+                <button type="button" class="quantity-btn" >+</button>
+              </div>
+            </div>
+
+            <!-- Price + remove -->
+            <div class="item-side">
+              <span class="item-price"><b>$24.00</b></span>
+              <a href="#" class="item-remove">Remove</a>
+            </div>
+
+          </article>
+        </section>
+        <section class="notes">
+          <h2 class="ord-notes">Order notes</h2>
+          <textarea class="notes-cont"
+            placeholder="Gift wrapping request..."></textarea>
+
+        </section>
       </div>
+
+      <!-- right -->
+      <div class="right">
+        <section class="promo">
+          <h2 class="prom-code">Promo code</h2>
+          <div class="promo-row">
+            <input class="prm-input" type="text" placeholder="Enter code" />
+            <button class="prm-btn" type="button">Apply</button>
+          </div>
+
+        </section>
+        <div class="summary">
+          <h2 class="summ-title">Order Summary</h2>
+          <div class="summ-row"><span>Subtotal (5 items)</span><span>$162.00</span></div>
+          <div class="summ-row"><span>Tax (8%)</span><span>$12.96</span></div>
+          <div
+            class="summ-row"><span>Shipping</span><span>$12.00</span></div>
+
+          <div class="free-ship">
+            <div class="free-ship-txt">
+              <span>Add <b>$38.00</b> for free shipping</span>
+              <span>$200</span>
+            </div>
+            <div class="bar"><div class="bar-fill"></div></div>
+          </div>
+
+          <div class="summ-total">
+            <span>Total</span>
+            <span class="total-price">$186.96</span>
+          </div>
+          <button class="checkout-btn" type="button">Proceed to Checkout</button>
+        </div>
+      
+        <section>
+                 <!-- Perks -->
+          <div class="box-pk">
+            <div class="pk">
+              <span class="pk-icon">📦</span>
+              <div>
+                <p class="pk-title">Free delivery over $200</p>
+                <p class="pk-text">Carefully packed & insured</p>
+              </div>
+            </div>
+            <div class="pk">
+              <span class="pk-icon">🤲</span>
+              <div>
+                <p class="pk-title">Handmade with care</p>
+                <p class="pk-text">Each piece made to order</p>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Quote -->
+          <blockquote class="quote">
+            “We make every item by hand, in small batches, with ingredients and
+            materials sourced as close to home as possible.”
+            <cite>— The Maker's Pantry</cite>
+          </blockquote>
+    
+        </section>
+      </div>
+    </div>
+    
     </main>
 
     <footer class="footer">
@@ -98,7 +305,8 @@
                 <path
                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
               </svg>
-              <span class="footer-text">ABC Company, 123 East, 17th Street, St. louis 10001</span>
+              <span class="footer-text">ABC Company, 123 East, 17th Street, St.
+                louis 10001</span>
             </div>
 
             <!-- Email -->
@@ -109,7 +317,8 @@
                   stroke-width="2"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <a class="footer-text" href="mailto:absdem@gmail.com">absdem@gmail.com</a>
+              <a class="footer-text"
+                href="mailto:absdem@gmail.com">absdem@gmail.com</a>
             </div>
 
             <!-- Phone -->
